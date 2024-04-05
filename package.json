@@ -1,0 +1,21 @@
+{
+  "name": "url_shortener_cli",
+  "version": "1.0.0",
+  "description": "CLI tool for shortening URLs using the Bitly API",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "url",
+    "shortener",
+    "cli",
+    "bitly"
+  ],
+  "dependencies": {
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "pg": "^8.11.5",
+    "sequelize": "^6.37.2"
+  }
+}
