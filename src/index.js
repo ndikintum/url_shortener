@@ -1,6 +1,6 @@
 // Import necessary modules
-const { shortenUrl } = require('./bitly');
-const Url = require('./models/url');
+const { shortenUrl } = require('./shortener_services');
+const Url = require('./schema/url');
 
 // Function to handle CLI input and output
 async function main() {
@@ -8,7 +8,7 @@ async function main() {
     // Get long URL from CLI arguments
     const longUrl = process.argv[2];
 
-    // Check if long URL is provided
+    // Check if long URL is not provided
     if (!longUrl) {
       console.error('Please provide a long URL as input.');
       return;
