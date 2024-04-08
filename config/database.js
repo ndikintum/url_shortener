@@ -8,13 +8,18 @@ const sequelize = new Sequelize({
   host: process.env.DB_HOST,
   port: process.env.DB_PORT,
 });
+
 // Test the database connection
-sequelize.authenticate()
-  .then(() => {
+async function testConnection() {
+  try {
+    await sequelize.authenticate();
     console.log('Connection has been established successfully.');
-  })
-  .catch(err => {
-    console.error('Unable to connect to the database:', err);
-  });
+  } catch (error) {
+    console.error('Unable to connect to the database:', error);
+  }
+}
+
+// Call the function to test the database connection
+testConnection();
 
 module.exports = sequelize;

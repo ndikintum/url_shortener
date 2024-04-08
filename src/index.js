@@ -8,7 +8,7 @@ async function main() {
     // Get long URL from CLI arguments
     const longUrl = process.argv[2];
 
-    // Check if long URL is not provided
+    // Check if long URL is provided
     if (!longUrl) {
       console.error('Please provide a long URL as input.');
       return;
