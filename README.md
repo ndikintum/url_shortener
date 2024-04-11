@@ -1,27 +1,31 @@
 
-# URL Shortener CLI
+# CLI URL Shortener 
 
-URL Shortener CLI is a command-line interface (CLI) tool for shortening URLs using the Bitly API and saving them into a database.
+CLI URL Shortener is a command-line interface (CLI) tool for shortening URLs using the Bitly API and saving them into a database.
 
 ## Installation
 
 1. Clone this repository to your local machine:
 
-   ```bash
+```bash
    git clone https://github.com/ndikintum/url_shortener.git
    ```
 
 2. Navigate to the project directory:
 
-   ```bash
-   cd url_shortener_cli
+```bash
+   cd url_shortener
    ```
 
 3. Install dependencies using npm:
 
-   ```bash
+```bash
    npm install
    ```
+4. In the project directory, open your terminal and run 
+```bash
+   npm install -g
+   ``` 
 
 4. Set up your environment variables by creating a `.env` file in the root directory of the project and add the following variables:
 
@@ -29,19 +33,25 @@ URL Shortener CLI is a command-line interface (CLI) tool for shortening URLs usi
 
 To shorten a URL, run the following command:
 
-```bash
-node src/index.js <long_url>
-```
-
-Replace `<long_url>` with the URL you want to shorten.
-
-Example:
+<Entry point shorten> 
+Example
 
 ```bash
-node src/index.js https://www.example.com
+src/index.js shorten
 ```
-
+You will be prompted to enter the URL as such <Enter the long URL:>
 This will output the shortened URL and save it into the database.
+
+To list a URL, run the following command:
+
+<Entry point list>
+Example
+
+```bash
+src/index.js list
+```
+
+This will output the list of shortened URLs saved into the database.
 
 ## Dependencies
 

@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "CLI tool for shortening URLs using the Bitly API",
   "main": "src/index.js",
+  "bin": {
+    "url_shortener": "/src/index.js"
+  },
   "scripts": {
     "start": "node src/index.js"
   },
