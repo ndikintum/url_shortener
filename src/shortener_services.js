@@ -1,11 +1,5 @@
 const axios = require('axios');
-const { Pool } = require('pg'); // Assuming you're using PostgreSQL as your database
 require('dotenv').config();
-
-// Create a PostgreSQL database pool
-const pool = new Pool({
-  connectionString: process.env.DATABASE_URL
-});
 
 async function shortenUrl(longUrl) {
   try {
