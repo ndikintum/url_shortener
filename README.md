@@ -27,7 +27,7 @@ CLI URL Shortener is a command-line interface (CLI) tool for shortening URLs usi
    npm install -g
    ``` 
 
-4. Set up your environment variables by creating a `.env` file in the root directory of the project and add the following variables:
+4. Set up your environment variables by creating a `.env` file in the root directory of the project:
 
 ## Usage
 
