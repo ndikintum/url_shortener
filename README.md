@@ -32,23 +32,26 @@ CLI URL Shortener is a command-line interface (CLI) tool for shortening URLs usi
 ## Usage
 
 To shorten a URL, run the following command:
-
-<Entry point shorten> 
 Example
 
 ```bash
-src/index.js shorten
+ <url_shortener shorten>
 ```
 You will be prompted to enter the URL as such <Enter the long URL:>
 This will output the shortened URL and save it into the database.
 
 To list a URL, run the following command:
-
-<Entry point list>
 Example
 
 ```bash
-src/index.js list
+url_shortener list
+```
+
+To get help , run the following command:
+Example
+
+```bash
+url_shortener --help
 ```
 
 This will output the list of shortened URLs saved into the database.

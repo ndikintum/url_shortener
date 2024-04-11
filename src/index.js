@@ -11,6 +11,15 @@ async function main() {
     const args = process.argv.slice(2);
     const command = args[0];
 
+    if (command === '--help') {
+      // Display usage instructions
+      console.log('Usage:');
+      console.log('  <url_shortener shorten> and when prompted add <Url> and press enter - To Shorten a URL');
+      console.log('  url_shortener list - To List stored shortened URLs');
+      console.log('  url_shortener --help - To Display usage instructions');
+      return;
+    }
+
     if (command === 'shorten') {
       // Prompt the user for the long URL
       const longUrl = await promptInput('Enter the long URL: ');
